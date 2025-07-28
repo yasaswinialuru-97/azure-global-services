@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure Global Services</title>
+  <style>
+    :root {
+      --primary-color: #0056b3;
+      --secondary-color: #003b80;
+      --accent-color: #66b3ff;
+      --light-bg: rgba(255, 255, 255, 0.9);
+      --dark-text: #00274d;
+      --border-radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url("bckgrd.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--dark-text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      width: 90px;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      background-color: var(--light-bg);
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+
+    .services ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .services ul li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .services ul li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: white;
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    form input,
+    form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: var(--border-radius);
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: var(--border-radius);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    footer {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: var(--dark-text);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Azure Global Services Logo" />
+    <h1>Azure Global Services</h1>
+    <p><em>Empowering Global Dreams, One Student at a Time.</em></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Azure Global Services is committed to helping students achieve their dreams of studying abroad. With expert guidance, personalized support, and a network of global universities, we simplify the application and visa process for international education.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>University Admissions</li>
+      <li>Visa Guidance</li>
+      <li>SOP & LOR Assistance</li>
+      <li>Career Counselling</li>
+      <li>Test Prep Support (IELTS, PTE, etc.)</li>
+      <li>Post-arrival Support</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> <a href="mailto:applications@azureglobalservices.com">applications@azureglobalservices.com</a></p>
+    <p><strong>Phone:</strong> +91-9666667567</p>
+    <p><strong>Location:</strong> Vijayawada</p>
+
+    <h3>Send a Message</h3>
+    <form action="https://formspree.io/f/mwkgykkd" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Azure Global Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
